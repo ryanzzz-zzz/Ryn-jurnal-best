@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no" />
+<title>RYN THE JOURNAL</title>
+<meta name="theme-color" content="#0a0a0d" />
+<link rel="manifest" href="manifest.json" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- SPLASH SCREEN -->
+  <div id="splash">
+    <div id="splash-text">RYN THE JOURNAL</div>
+  </div>
+
+  <!-- APP ROOT -->
+  <div id="app" class="hidden">
+
+    <header class="topbar">
+      <div class="brand">RYN<span class="dim">.</span>JOURNAL</div>
+      <div class="topbar-actions">
+        <button id="btn-ai-journal" class="btn-ai">✦ AI JOURNAL</button>
+        <button id="btn-add-trade" class="btn-primary">+ ADD TRADE</button>
+      </div>
+    </header>
+
+    <main id="page-content"></main>
+
+    <nav class="bottom-nav">
+      <button class="nav-item active" data-page="dashboard">
+        <span class="nav-icon">▣</span><span>DASHBOARD</span>
+      </button>
+      <button class="nav-item" data-page="journal">
+        <span class="nav-icon">▤</span><span>JOURNAL</span>
+      </button>
+      <button class="nav-item" data-page="analytics">
+        <span class="nav-icon">◈</span><span>ANALYTICS</span>
+      </button>
+      <button class="nav-item" data-page="pattern">
+        <span class="nav-icon">✦</span><span>PATTERN</span>
+      </button>
+      <button class="nav-item" data-page="settings">
+        <span class="nav-icon">⚙</span><span>SETTINGS</span>
+      </button>
+    </nav>
+  </div>
+
+  <!-- MODALS -->
+  <div id="modal-root"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+  <script src="js/db.js"></script>
+  <script src="js/calc.js"></script>
+  <script src="js/render.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/ai-journal.js"></script>
+</body>
+</html>
